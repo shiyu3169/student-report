@@ -1,0 +1,56 @@
+.student-grades {
+  height: 219px;
+  width: 100%;
+  overflow: auto;
+  table {
+    thead {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 19px;
+      color: #3b3b3b;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ebebeb;
+      text-align: left;
+      tr {
+        th {
+          &:first-child {
+            width: 219px;
+          }
+          &:nth-child(2) {
+            width: 70px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    tbody {
+      height: 185px;
+      overflow: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .student-grades {
+    table {
+      width: 100%;
+      thead {
+        tr {
+          th {
+            &:first-child {
+              width: 50%;
+              text-align: center;
+            }
+            &:nth-child(2) {
+              width: 50%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
